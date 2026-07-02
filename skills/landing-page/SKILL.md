@@ -1,15 +1,15 @@
 ---
-description: Build or improve a conversion-focused landing page for a vibe-coded app
-argument-hint: "[product URL or 'new']"
+name: landing-page
+description: Audit or build a conversion-focused landing page using a 7-section framework, with full copy and ranked headline variants. Use when the user asks to "review my landing page," "improve my homepage copy," "build a landing page," "write copy for my homepage," "why isn't my landing page converting," or has a page that describes features instead of outcomes.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Landing Page
 
 Most AI-built apps ship with a landing page that describes features instead of solving the visitor's problem. This skill audits existing landing pages or builds a new one using the framework that converts for solo-founder products.
-
-## Trigger
-
-User runs `/landing-page` or asks to "review my landing page," "improve my homepage copy," "build a landing page," "write copy for my homepage," "why isn't my landing page converting," or similar.
 
 ## Context
 
@@ -136,6 +136,6 @@ If time is short, the single highest-leverage fix is almost always the hero head
 ```
 
 **If building from scratch or rewriting:**
-- Full copy for all 7 sections, ready to hand to a designer or paste into Webflow/Framer/Next.js
+- Full copy for all 7 sections using [assets/landing-page-template.md](assets/landing-page-template.md) as the skeleton — fill every bracket, deliver as one file ready to hand to a designer or paste into Webflow/Framer/Next.js
 - 5 headline variants ranked by recommendation
 - Notes on what visual assets (screenshots, GIF, video) are needed for each section

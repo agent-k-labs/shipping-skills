@@ -1,0 +1,29 @@
+{
+  "skill_name": "onboarding-activation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I get 20-30 signups a week for my AI pitch-deck tool but almost nobody creates a deck. They sign up, click around, and leave. Sign-up is email+password, then they land on an empty dashboard. Help.",
+      "expected_output": "A defined activation event (first deck generated), an audit of the current flow flagging the empty dashboard as the core failure, a rebuilt ≤3-step flow to first deck in under 3 minutes, welcome + day-3 email drafts, empty-state copy, and activation tracking metrics.",
+      "assertions": [
+        "A single specific activation event is defined with a trackable event name",
+        "The empty dashboard is identified as a primary friction point with a concrete replacement (guided first action or example data)",
+        "The recommended flow gets users to the core action in 3 or fewer steps",
+        "Both a welcome email and a day-3 non-activated follow-up email are drafted",
+        "Empty-state copy is provided",
+        "Activation rate and time-to-activation metrics are defined with targets"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "what should my activation metric be? my app lets teachers make interactive quizzes. students join with a code. teachers sign up, some make a quiz but never run it live with a class.",
+      "expected_output": "A reasoned activation definition — likely 'first quiz run live with real students' rather than 'quiz created', since value is experienced in the live session — with the tracking event, a target, and how to move creators to first live run.",
+      "assertions": [
+        "The output reasons about where value is actually experienced rather than defaulting to the first obvious action",
+        "A single activation event is chosen and justified against the quiz-created alternative",
+        "A trackable implementation (event name or query) is specified",
+        "At least 2 concrete tactics are given to move quiz-creators to their first live session"
+      ]
+    }
+  ]
+}

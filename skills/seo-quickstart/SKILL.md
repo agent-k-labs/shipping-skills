@@ -1,15 +1,15 @@
 ---
-description: Minimum viable SEO for a vibe-coded app — what to set up before you do anything else
-argument-hint: "[product URL]"
+name: seo-quickstart
+description: Set up minimum viable SEO for a vibe-coded app — technical essentials (meta tags, OG image, sitemap, robots.txt, Search Console), keyword targeting, use-case/comparison/glossary pages, and llms.txt for AI search. Use when the user asks to "add SEO to my app," "set up basic SEO," "how do I rank on Google," "my site isn't showing up in search," or wants the minimum SEO that compounds.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # SEO Quickstart
 
 Most vibe-coded apps ship with zero SEO. This skill gives you the minimum setup that will compound over months — the technical essentials, the one content strategy that works for solo founders, and how to set it up without an SEO expert.
-
-## Trigger
-
-User runs `/seo-quickstart` or asks to "add SEO to my app," "set up basic SEO," "how do I rank on Google," "my site isn't showing up in search," "what's the minimum SEO I need," or similar.
 
 ## Context
 
@@ -22,7 +22,13 @@ Read `product-context.md` if present. Also ask for:
 
 ### 1. Technical SEO (do this in one session — 2–4 hours)
 
-These are the non-negotiables. Each one takes 5–30 minutes.
+If the site is live, first audit the current state:
+
+```bash
+bash scripts/audit_page.sh https://yourdomain.com
+```
+
+It reports title/description lengths, H1s, OG tags, canonical, robots.txt (including AI crawler rules), sitemap, and llms.txt — fix its 🔴 items using the snippets below. These are the non-negotiables. Each one takes 5–30 minutes.
 
 **Meta tags:**
 Every public page needs a unique `<title>` and `<meta name="description">`:

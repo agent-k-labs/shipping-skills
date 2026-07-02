@@ -1,15 +1,15 @@
 ---
-description: Set up and nurture a pre-launch waitlist for your vibe-coded app
-argument-hint: "[product name or URL]"
+name: waitlist
+description: Set up and nurture a pre-launch waitlist — form copy and schema, confirmation email, a weekly nurture calendar, launch-day email, and momentum tactics to grow the list. Use when the user asks to "set up a waitlist," "collect emails before launch," "create a pre-launch page," "build waitlist momentum," or is pre-launch and wants an email list.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Waitlist
 
 A waitlist is not just a list of emails — it's a pre-launch growth engine. Done right, it builds anticipation, gives you beta testers, and converts to paying users on launch day. Done wrong, it's a form that collects nothing and sends no emails.
-
-## Trigger
-
-User runs `/waitlist` or asks to "set up a waitlist," "collect emails before launch," "create a pre-launch page," "build waitlist momentum," or similar.
 
 ## Context
 

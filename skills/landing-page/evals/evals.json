@@ -1,0 +1,28 @@
+{
+  "skill_name": "landing-page",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My landing page isn't converting — 400 visitors last week, 2 signups. It's at https://example-productivity-app.com. The headline is 'Meet FlowState — The Future of Productivity'. Can you review it?",
+      "expected_output": "An audit against the 7-section framework with pass/fail per section, specifically flagging the name-first headline as the top issue, 5 rewritten headline variants, and a prioritized top-3 fix list.",
+      "assertions": [
+        "The audit evaluates the page against distinct framework sections (hero, problem, how-it-works, benefits, social proof, pricing, footer CTA)",
+        "The 'Meet [Product]' headline is flagged and outcome-first alternatives are provided",
+        "At least 5 headline variants are written with one recommended",
+        "The output ends with a prioritized short list of highest-impact fixes, not an unranked dump"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write landing page copy for my new app: it's called Nestly, it helps landlords with 2-10 rental units track rent payments and maintenance requests without spreadsheets. Target user is small-time landlords who hate property management software because it's built for big companies. $19/mo, 14-day free trial.",
+      "expected_output": "Complete copy for all 7 sections (hero, problem, how it works, features→benefits, social proof plan, pricing, footer CTA) using the landing-page template, written in second person, with an asset checklist of needed visuals.",
+      "assertions": [
+        "Copy is delivered for all 7 framework sections",
+        "The hero headline leads with the outcome for small landlords, not the product name",
+        "Feature bullets are written as benefits (what the landlord gets), not feature names",
+        "Pricing section includes the $19/mo and trial terms with an anchor comparison",
+        "The output notes what visual assets are needed per section"
+      ]
+    }
+  ]
+}

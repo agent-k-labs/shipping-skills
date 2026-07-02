@@ -1,15 +1,15 @@
 ---
-description: Get your first 100 users — a concrete playbook for a vibe-coded app post-launch
-argument-hint: "[product name, URL, or target audience]"
+name: first-100-users
+description: Build a concrete playbook to get a product's first 100 users — channel selection, manual outreach scripts, build-in-public cadence, and a personalized 30-day plan. Use when the user asks "how do I get my first users," "no one is signing up," "how to get traction," "where do my users hang out," or has just launched with zero distribution.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # First 100 Users
 
 The first 100 users don't come from marketing. They come from you going and getting them. This skill builds the specific playbook for your product — which channels to use, in what order, and exactly how.
-
-## Trigger
-
-User runs `/first-100-users` or asks "how do I get my first users," "no one is signing up," "how to get traction," "where do my users hang out," or similar.
 
 ## Context
 

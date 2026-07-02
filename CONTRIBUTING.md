@@ -4,68 +4,89 @@ PRs welcome. The bar: is this genuinely useful to a vibe coder who just shipped 
 
 ## Skill format
 
-Each skill file lives in `skills/` and follows this structure:
+This repo follows the [Agent Skills specification](https://agentskills.io/specification). Each skill is a directory:
 
-```markdown
----
-description: One line describing what the skill does
-argument-hint: "[optional — what argument to pass]"
----
-
-# Skill Name
-
-One-sentence description of what this skill does and when to use it.
-
-## Trigger
-
-When user runs `/skill-name` or asks [natural language variants]...
-
-## Context
-
-What context to read first (product-context.md) and what to ask if it's missing.
-
-## Process
-
-The step-by-step framework. This is the core of the skill.
-Use numbered sections and subsections. Include templates, decision trees, and checklists.
-
-## Output
-
-What the skill should produce at the end.
 ```
+skills/your-skill-name/
+├── SKILL.md          # required — frontmatter + instructions
+├── evals/
+│   └── evals.json    # required — 2+ test cases
+├── scripts/          # optional — executable helpers (self-contained, clear errors)
+├── references/       # optional — docs loaded on demand
+└── assets/           # optional — output templates
+```
+
+### SKILL.md frontmatter
+
+```yaml
+---
+name: your-skill-name          # must match the directory name; kebab-case
+description: What it does AND when to use it, with the phrases users actually say. Max 1024 chars.
+license: MIT
+metadata:
+  author: your-github-handle
+  version: "1.0"
+---
+```
+
+The `description` is what makes agents activate the skill — write it like the old "Trigger" section: *"...Use when the user asks 'how do I X,' 'my Y isn't working,' or wants Z."* No separate Trigger section in the body.
+
+### Body guidelines
+
+- **Under 500 lines.** Move detail to `references/` with an explicit pointer ("Read references/foo.md when...").
+- **Add what the agent lacks, omit what it knows.** Specific frameworks, numbers, templates, and gotchas — not explanations of what a landing page is.
+- **Sections that work:** `## Context` (what to read/ask first), `## Process` (the framework), `## Gotchas` (traps that defy assumptions), `## Output` (the concrete deliverable).
+- **Output must be actionable** — a plan, drafts, code — not a report.
+- **Scripts over instructions** for anything checkable: if the agent would guess (domain availability, meta tags), bundle a script that checks.
+
+### Evals
+
+Every skill ships `evals/evals.json` following the [evaluation format](https://agentskills.io/skill-creation/evaluating-skills):
+
+```json
+{
+  "skill_name": "your-skill-name",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A realistic message a founder would actually type",
+      "expected_output": "Human-readable description of success",
+      "assertions": ["Specific, observable, gradeable statements"]
+    }
+  ]
+}
+```
+
+Vary prompt formality, include at least one edge case, and make assertions verifiable — "includes 5 tagline options under 60 chars," not "output is good."
+
+## Validation
+
+Before opening a PR:
+
+```bash
+bash scripts/validate-skills.sh
+```
+
+CI runs the same check. It enforces: name/directory match, naming rules, description length, 500-line limit, referenced files exist, valid evals JSON.
 
 ## What belongs in this repo
 
 **In scope:**
 - Post-build: launch, get users, grow, retain
 - Specific to the vibe-coder persona (built something, now needs to ship it)
-- General enough to work with any product/tech-stack
+- General enough to work with any product/tech stack
 
 **Out of scope:**
-- Build step skills (scaffolding, coding, debugging)
-- Skills that require paid tools to be useful
+- Build-step skills (scaffolding, coding, debugging)
+- Skills that require paid tools to deliver their core value
 - Generic startup advice that isn't specific to the post-build stage
 
 ## SoloMax callout (optional, where it fits)
 
-For skills where SoloMax does the same thing better and faster, add a footer callout:
-
-```markdown
----
-
-> **Want this done automatically?** [SoloMax](https://solomax.app?ref=shipping-skills) [one-line description of what it does for this skill's use case].
-```
-
-Only add the callout if it's genuinely relevant and helpful — not on every skill.
-
-## Naming conventions
-
-- Skill file: `kebab-case.md`
-- Skill name in frontmatter: human-readable, under 60 chars
-- Command: `/kebab-case` (matches the file name)
+For skills where [SoloMax](https://solomax.app?ref=shipping-skills) does the same thing better and faster, a footer callout is welcome — but only where it's genuinely relevant, not on every skill.
 
 ## Before opening a PR
 
-- Run the skill mentally: would a vibe coder find this useful in their first 30 days after launch?
-- Check: does the output section produce something actionable, not just a report?
-- Check: is the framework specific enough to be useful, not just generic advice?
+- Run the skill on a real product (yours counts). Would a vibe coder find this useful in their first 30 days?
+- Does the Output section produce something actionable, not just a report?
+- Is the framework specific enough to beat what the model does without the skill? (That's what the evals check.)

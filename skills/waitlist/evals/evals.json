@@ -1,0 +1,29 @@
+{
+  "skill_name": "waitlist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm 6 weeks from launching my AI resume builder. I want to start collecting emails now. I'm building with Next.js and Supabase, no email service yet. Set me up.",
+      "expected_output": "A complete waitlist kit: form copy (fields, CTA, trust note), the database schema, an email service recommendation fitting Next.js (e.g. Resend), a confirmation email draft, a 6-week nurture calendar, a launch email draft, and momentum tactics.",
+      "assertions": [
+        "Form copy includes a CTA that is an action phrase, not 'Submit'",
+        "A concrete tech recommendation is made for their Next.js/Supabase stack including an email provider",
+        "A full confirmation email draft is included",
+        "A week-by-week nurture plan covers the 6 weeks until launch",
+        "A launch-day email draft is included",
+        "At least 3 list-growth tactics beyond the form itself are given"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "i have a waitlist of 340 people collected over 2 months but i've never emailed them once. launch is in 10 days. is the list dead? what do i do?",
+      "expected_output": "Honest triage: the list is cold but recoverable; a re-engagement plan for the 10 days (reintroduction email now, 1-2 nurture touches, launch email), with expectation-setting on open rates and drafts for the key emails.",
+      "assertions": [
+        "The output addresses the cold-list problem directly instead of giving a generic waitlist setup",
+        "A re-engagement email draft is provided to send before the launch email",
+        "A day-by-day or sequenced plan covers the 10 days to launch",
+        "Expectations are set honestly (e.g. lower open rates, some unsubscribes are normal)"
+      ]
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 ---
-description: Plan and execute a Product Hunt launch from prep to day-of
-argument-hint: "[planned launch date or 'ASAP']"
+name: product-hunt-launch
+description: Plan and execute a Product Hunt launch — timing strategy, 5 tagline options, product description, gallery brief, maker comment, and an hour-by-hour day-of timeline. Use when the user asks to "launch on Product Hunt," "plan my PH launch," "write my PH description," "what's the best day to launch," or mentions Product Hunt at all.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Product Hunt Launch
 
 A Product Hunt launch done right is still the best single-day distribution moment for a vibe-coded app. Done wrong, it's a wasted day. This skill builds the full playbook: tagline, description, gallery, maker comment, voting strategy, and day-of timeline.
-
-## Trigger
-
-User runs `/product-hunt-launch` or asks to "launch on Product Hunt," "plan my PH launch," "write my PH description," "what's the best day to launch," or similar.
 
 ## Context
 
@@ -129,6 +129,13 @@ I'm here all day — ask me anything. Would love your feedback on [specific thin
 - [ ] If you have an email list: launch-day email is ready to send at 8 AM PT
 - [ ] Slack / Discord / Reddit posts are drafted
 - [ ] Your calendar is blocked for the entire day
+
+## Gotchas
+
+- **Never buy upvotes or join upvote-exchange pods.** PH's fraud detection penalizes or delists launches for this — it can kill the launch mid-day. Warm personal outreach only.
+- **Create the PH "upcoming" (teaser) page as soon as the date is set.** It gives you a shareable link for the waitlist/countdown emails before launch, and people can subscribe to be notified at launch.
+- **Calibrate expectations to audience size.** With <1k followers and a small list, a healthy outcome is 100–250 upvotes and a strong sub-category ranking — not #1 Product of the Day, which typically requires a much larger pre-existing audience. Say this to the user so launch day isn't read as a failure.
+- **Early velocity matters most.** Upvotes and substantive comments in the first 1–2 hours drive ranking more than totals — front-load the warmest asks to right after 12:01 AM PT, not the morning.
 
 ## Output
 

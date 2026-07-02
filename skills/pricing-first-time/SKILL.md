@@ -1,15 +1,15 @@
 ---
-description: Choose your first pricing model and price point for a vibe-coded app
-argument-hint: "[product name or URL]"
+name: pricing-first-time
+description: Choose a first pricing model and price point — model selection, value-based and competitor anchors, a 2-tier structure, and pricing page copy. Use when the user asks "help me price my app," "should I charge for this," "what should my pricing be," "free or paid," "how do I set my first price," or is stuck on their first pricing decision.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Pricing (First Time)
 
 The first pricing decision is the one most solo founders get stuck on longest. This skill cuts through the analysis paralysis and gives you a framework for your first real price — one you can ship today.
-
-## Trigger
-
-User runs `/pricing-first-time` or asks to "help me price my app," "should I charge for this," "what should my pricing be," "free or paid," "how do I set my first price," or similar.
 
 ## Context
 

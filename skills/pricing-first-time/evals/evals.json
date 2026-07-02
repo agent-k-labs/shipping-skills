@@ -1,0 +1,28 @@
+{
+  "skill_name": "pricing-first-time",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Should I charge for my app? It's a tool that generates social media carousels from blog posts. Canva does something similar for free-ish. I have 30 users from a soft launch, all free. I quit my job so I need revenue soon.",
+      "expected_output": "A model recommendation (free trial → paid, given revenue urgency), a specific price point derived from value and competitor anchors (including the Canva comparison), a 2-tier structure ready for Stripe, pricing page copy, and a leading indicator to watch.",
+      "assertions": [
+        "A single pricing model is recommended with reasoning tied to the user's revenue urgency",
+        "A specific dollar price point is proposed, not a range-only answer",
+        "The Canva alternative is addressed in the positioning/anchoring",
+        "A 2-tier structure is defined with what's in each tier",
+        "The output includes a measurable signal to know if the price is wrong (e.g. conversion threshold)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "my saas saves recruiters about 5 hours a week on candidate screening. competitors charge $99-299/mo. i was thinking $9/mo to undercut everyone. thoughts?",
+      "expected_output": "A pushback on drastic underpricing using the value-based floor (5 hrs/week at recruiter rates = substantial monthly value; 10-20% capture suggests $50-150/mo), explanation of why $9 signals low quality in B2B, and a concrete recommended price with tier structure.",
+      "assertions": [
+        "The output pushes back on the $9 price rather than validating it",
+        "A value-based calculation is shown using the stated 5 hours/week savings",
+        "A specific higher price is recommended with justification",
+        "The reasoning addresses price-as-quality-signal for B2B buyers"
+      ]
+    }
+  ]
+}

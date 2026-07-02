@@ -1,0 +1,27 @@
+{
+  "skill_name": "pre-launch-checklist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm about to launch https://solomax.app publicly tomorrow. Can you check if I'm actually ready?",
+      "expected_output": "A launch readiness report combining automated checks (run via scripts/check_site.sh: HTTPS, meta/OG tags, robots, sitemap, 404) with the manual checklist sections (flows, trust, emails, copy), organized into Ready / Blockers / Nice-to-fix with a launch verdict.",
+      "assertions": [
+        "The automated site check script is run against the URL (evidence of its output in the response)",
+        "The report is organized into passing items, blockers, and nice-to-fix categories",
+        "A clear launch verdict is given (ready / fix blockers first / hold)",
+        "Items that cannot be checked automatically (e.g. email deliverability, payment flow) are listed as questions or manual steps rather than silently skipped"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "pre-launch audit please. my app is a meal-planning PWA, not deployed yet, runs on localhost:3000. stripe is set up in test mode. no privacy policy yet.",
+      "expected_output": "A checklist-driven audit adapted to a not-yet-deployed app: flags missing privacy policy as a blocker (payments + user data), notes Stripe test→live checklist, lists what can only be verified after deploy, and gives a prioritized fix list.",
+      "assertions": [
+        "The missing privacy policy is flagged as a launch blocker given payments are collected",
+        "Stripe test-mode to live-mode transition is addressed",
+        "The output distinguishes checks possible now vs. checks requiring the deployed URL",
+        "Fixes are prioritized by impact rather than presented as a flat list"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "skill_name": "directory-submissions",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want backlinks and free traffic for my AI meeting-notes app (live, freemium, $12/mo pro tier). Where should I submit it? Give me everything I need to actually do the submissions.",
+      "expected_output": "A submission asset kit (name, tagline, short/medium/long descriptions, logo/screenshot specs, tags, pricing tag), a customized tier-ranked directory list drawing on the bundled directory database including AI-specific directories, a 30-day submission calendar, and per-directory description variants.",
+      "assertions": [
+        "All core submission assets are drafted (tagline under 60 chars, multiple description lengths, tags)",
+        "The directory list is tiered/prioritized and includes AI-specific directories given the product category",
+        "A day-by-day or week-by-week submission schedule is included spreading submissions out",
+        "Description variants are adapted for at least 2 different directory audiences",
+        "Post-submission tracking (e.g. Search Console) is mentioned"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "is it worth submitting my b2b invoicing saas to those AI tool directories? and which directories actually matter for b2b?",
+      "expected_output": "A direct answer: skip AI-tool directories for a non-AI B2B product (mismatched audience, low-value backlink), with the B2B-relevant set instead (G2, Capterra, GetApp, SaaSHub, AlternativeTo) and what to prepare for each.",
+      "assertions": [
+        "The output advises against AI directories for a non-AI product rather than recommending everything",
+        "At least 4 B2B-relevant directories are named",
+        "The reasoning covers audience match, not just backlink counting",
+        "Concrete submission requirements or assets are listed for the recommended directories"
+      ]
+    }
+  ]
+}

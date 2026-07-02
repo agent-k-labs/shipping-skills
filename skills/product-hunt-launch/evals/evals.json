@@ -1,0 +1,29 @@
+{
+  "skill_name": "product-hunt-launch",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to launch my app on Product Hunt in 2 weeks. It's called Draftback — it turns messy meeting notes into client-ready summaries for freelance consultants. I have ~800 Twitter followers and a 150-person waitlist. Plan my launch.",
+      "expected_output": "A complete PH launch kit: recommended launch day (Tue–Thu) with timing rationale, 5 tagline options under 60 chars with one recommended, a 200–260 word PH description, a 5-image gallery brief, a maker comment draft, an hour-by-hour day-of timeline starting at 12:01 AM PT, and a pre-launch checklist.",
+      "assertions": [
+        "A specific launch day is recommended with reasoning (Tuesday, Wednesday, or Thursday)",
+        "Exactly 5 tagline options are presented and each is under 60 characters",
+        "The output includes a ready-to-paste maker comment draft",
+        "The day-of timeline starts at or references 12:01 AM Pacific Time submission",
+        "The plan leverages the user's stated assets (waitlist email, Twitter followers) at specific times of day",
+        "A gallery/media brief describes what each of roughly 5 images should show"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "what's the best day to launch on product hunt and does it still matter in 2026? my product is an AI logo generator, no audience at all.",
+      "expected_output": "A direct answer (Tue–Thu, midweek; submit 12:01 AM PT) plus honest expectation-setting for a no-audience launch and what to do about it: PH is one distribution moment, warm outreach list matters more than day choice, and concrete prep steps.",
+      "assertions": [
+        "The output gives a direct day recommendation rather than hedging",
+        "The output addresses the no-audience situation honestly (does not promise top-5 results)",
+        "At least 3 concrete preparation actions are given for launching without an existing audience",
+        "The output mentions the 12:01 AM PT submission window or explains launch-day timing mechanics"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "skill_name": "launch-video",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need a launch video for TikTok for my app Quotient — it lets freelance web designers generate project quotes from a client call recording. Launching next week, goal is free trial signups.",
+      "expected_output": "A positioning snapshot, 3 launch angles with one recommended for TikTok, a timecoded 15-30s script (hook/body/CTA), an AI video generation prompt with 9:16 aspect ratio and style notes, caption + posting copy, and 10 opening hooks.",
+      "assertions": [
+        "Three distinct launch angles are compared with one recommended for the TikTok context",
+        "The script is timecoded and fits 15-30 seconds with a hook in the first 3 seconds",
+        "An AI generation prompt is included following subject+action+scene+camera+style structure",
+        "9:16 aspect ratio is specified for TikTok",
+        "Exactly 10 opening hooks are provided using varied hook types",
+        "Caption copy with a CTA is included"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "make me a 60 second product hunt launch video script for my API monitoring tool. developers are the audience. we alert on latency spikes before customers notice.",
+      "expected_output": "A 30-60s Product Hunt script adapted for a developer audience (demo-first angle likely), timecoded, showing the product working, with a 16:9 generation prompt and PH-appropriate posting copy.",
+      "assertions": [
+        "The script is timecoded and fits within 60 seconds",
+        "The tone and content are developer-appropriate (concrete, demo-led, no marketing fluff)",
+        "The core value (alert before customers notice) appears in the hook or early body",
+        "A 16:9 or PH-appropriate aspect ratio is specified"
+      ]
+    }
+  ]
+}

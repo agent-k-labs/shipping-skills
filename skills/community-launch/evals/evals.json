@@ -1,0 +1,28 @@
+{
+  "skill_name": "community-launch",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Where should I post my new app? It's a budgeting tool for couples who keep separate bank accounts. I'm active on Reddit personally but never posted about my product anywhere. Scared of getting banned.",
+      "expected_output": "A community launch kit: 5-8 named communities (specific subreddits like r/personalfinance, r/relationships-adjacent money subs, Discords, forums), a spread-out posting schedule, 3 custom post drafts tailored per community, response protocol, and per-community ban risks.",
+      "assertions": [
+        "At least 5 specific named communities are recommended with relevance to couples/personal finance",
+        "Post drafts are uniquely written for different communities, not one draft reused",
+        "The drafts lead with the problem/story rather than 'check out my app'",
+        "Ban-risk warnings or community rules are addressed per platform",
+        "A posting schedule spreads submissions over multiple days rather than all at once"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "i posted my app in 6 subreddits yesterday, same text in all of them. two got removed and one mod muted me. how do i fix this and keep launching on reddit?",
+      "expected_output": "A candid diagnosis (copy-paste cross-posting is the exact behavior spam filters and mods target), damage-control steps (don't repost soon, engage genuinely, possibly apologize to the mod), and a corrected relaunch plan with per-community unique posts.",
+      "assertions": [
+        "The output identifies identical cross-posting as the cause of removals",
+        "Damage-control steps are given before any new posting",
+        "The relaunch plan requires uniquely-written posts per community",
+        "The output includes contribute-before-you-take guidance (genuine engagement before promotion)"
+      ]
+    }
+  ]
+}

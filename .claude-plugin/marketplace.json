@@ -1,0 +1,19 @@
+{
+  "name": "shipping-skills",
+  "owner": {
+    "name": "agent-k-labs",
+    "url": "https://github.com/agent-k-labs"
+  },
+  "metadata": {
+    "description": "AI agent skills for everything after the AI builds your app — launch, first users, growth",
+    "version": "1.0.0",
+    "repository": "https://github.com/agent-k-labs/shipping-skills"
+  },
+  "plugins": [
+    {
+      "name": "shipping-skills",
+      "source": "./",
+      "description": "14 skills for shipping a vibe-coded app: pre-launch audit, landing page, waitlist, pricing, domain name, launch video, Product Hunt, first 100 users, community launch, directory submissions, SEO, onboarding, and analytics."
+    }
+  ]
+}

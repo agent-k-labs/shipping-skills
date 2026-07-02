@@ -1,15 +1,15 @@
 ---
-description: Get new users to their first "aha" moment — onboarding activation for vibe-coded apps
-argument-hint: "[product URL or describe the core user action]"
+name: onboarding-activation
+description: Define the activation moment, audit the onboarding flow, and rebuild it so new users reach first value in under 3 minutes — includes welcome and day-3 emails, empty-state copy, and activation tracking. Use when the user says "users drop off after signup," "high sign-up low activation," "nobody's using the core feature," "users aren't converting," or wants to improve onboarding.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Onboarding & Activation
 
 Most vibe-coded apps get signups but lose them in the first session. The user lands, doesn't immediately understand what to do, and leaves. Activation — getting a user to experience the core value at least once — is the most important metric in your first 30 days. This skill audits and rebuilds your onboarding.
-
-## Trigger
-
-User runs `/onboarding-activation` or asks to "improve my onboarding," "users aren't converting," "high sign-up low activation," "users drop off after signup," "nobody's using the core feature," or similar.
 
 ## Context
 

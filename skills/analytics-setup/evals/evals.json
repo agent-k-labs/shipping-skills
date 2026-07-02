@@ -1,0 +1,29 @@
+{
+  "skill_name": "analytics-setup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have zero analytics on my app. Next.js on Vercel, Clerk auth, Stripe payments. It's a document-signing tool for landlords. What should I track and how do I set it up? I don't want to drown in dashboards.",
+      "expected_output": "A tool stack recommendation (Vercel Analytics + PostHog, Stripe dashboard for revenue), the 5 events named for this product (e.g. document_signed as core action), copy-paste PostHog setup for Next.js including server-side Stripe webhook events, env vars list, a filled tracking plan, and the 15-minute weekly review habit.",
+      "assertions": [
+        "A specific tool stack is recommended with reasoning fitted to Next.js/Vercel",
+        "Exactly 5 core events are defined, named for this product's domain (document signing)",
+        "Implementation code covers both client-side capture and server-side Stripe webhook events",
+        "The identify call after Clerk auth is included",
+        "Derived metrics (activation, conversion, retention proxy) are defined from the 5 events",
+        "A weekly review routine is included honoring the no-dashboards request"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "i installed posthog 2 months ago and it's tracking 47 different events someone (me) made up on random nights. i have no idea what any of it means. help me clean this up.",
+      "expected_output": "A triage plan: identify the 5 events that matter, map existing events onto them, deprecate the rest (don't delete history), fix naming going forward with a convention, and a filled tracking plan as the new source of truth.",
+      "assertions": [
+        "The output reduces to a small core event set rather than organizing all 47",
+        "A naming convention is prescribed for future events",
+        "The plan preserves historical data (deprecate/ignore) rather than advising deletion",
+        "A concrete mapping exercise or tracking-plan document is produced as the deliverable"
+      ]
+    }
+  ]
+}

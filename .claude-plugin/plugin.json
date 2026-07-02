@@ -1,0 +1,13 @@
+{
+  "name": "shipping-skills",
+  "description": "AI agent skills for everything after the AI builds your app — launch, first users, growth",
+  "version": "1.0.0",
+  "author": {
+    "name": "agent-k-labs",
+    "url": "https://github.com/agent-k-labs"
+  },
+  "homepage": "https://github.com/agent-k-labs/shipping-skills",
+  "repository": "https://github.com/agent-k-labs/shipping-skills",
+  "license": "MIT",
+  "keywords": ["launch", "marketing", "growth", "product-hunt", "seo", "vibe-coding", "agent-skills"]
+}

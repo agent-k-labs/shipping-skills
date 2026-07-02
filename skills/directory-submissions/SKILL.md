@@ -1,15 +1,15 @@
 ---
-description: Submit your vibe-coded app to directories for free traffic and backlinks
-argument-hint: "[product URL and category/type]"
+name: directory-submissions
+description: Submit a vibe-coded app to the directories that drive free traffic and backlinks — a prioritized tier list, a reusable submission asset kit, and a 30-day schedule. Use when the user asks to "submit to directories," "list my app," "where can I submit my tool," or wants listings on Product Hunt, Indie Hackers, BetaList, or AI tool directories like There's An AI For That and Futurepedia.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Directory Submissions
 
 Directories are a one-time effort that pays back for months. A well-submitted app on the right directories gets you: organic search traffic, qualified users who are specifically looking for tools, and backlinks that improve your SEO. This skill lists exactly where to submit and what to write.
-
-## Trigger
-
-User runs `/directory-submissions` or asks to "submit to directories," "list my app on directories," "where can I submit my tool," "how to get on ProductHunt / Indie Hackers / AI directories," or similar.
 
 ## Context
 
@@ -40,49 +40,14 @@ Prepare all of these before submitting to the first directory. You'll paste them
 
 ### 2. Priority tier list
 
-**Tier 1 — Submit day 1 (highest traffic, best quality)**
+Read [references/directories.md](references/directories.md) for the full tiered directory database (name, URL, category fit, cost). Select from it based on the product's category and stage:
 
-| Directory | URL | Best for | Notes |
-|-----------|-----|---------|-------|
-| Product Hunt | producthunt.com | All SaaS/apps | Schedule a real launch day; don't just add to the site |
-| Indie Hackers | indiehackers.com/products | Solo founder tools | Add product page; post in community |
-| Show HN | news.ycombinator.com | Dev/technical tools | Post as a text submission, link to your site |
-| Hacker News Launch | news.ycombinator.com | Dev tools | "Ask HN: Who wants a beta invite for [X]?" |
+- **Tier 1** (day 1): Product Hunt, Indie Hackers, Show HN, Uneed — every product
+- **Tier 2** (week 1): category directories — AI directories only if the product is AI-first; BetaList only if pre-launch
+- **Tier 3** (first month): specialized and comparison directories
+- **Tier 4**: niche — built-with showcases, marketplace listings, industry-specific lists
 
-**Tier 2 — Submit in the first week (AI/tool-specific directories)**
-
-| Directory | URL | Best for |
-|-----------|-----|---------|
-| There's An AI For That | theresanaiforthat.com | AI tools |
-| Futurepedia | futurepedia.io | AI tools |
-| AI Tool Hunt | aitoolfun.com | AI tools |
-| Toolify.ai | toolify.ai | AI tools |
-| BetaList | betalist.com | Pre-launch / waitlist products |
-| Uneed | uneed.best | All tools |
-| Micro SaaS HQ | microsaashq.com | Small/solo SaaS |
-| SaaS Hub | saashub.com | SaaS tools |
-| G2 (free listing) | g2.com | Business SaaS |
-
-**Tier 3 — Submit in the first month (specialized directories)**
-
-| Directory | URL | Best for |
-|-----------|-----|---------|
-| Capterra | capterra.com | Business software |
-| GetApp | getapp.com | Business software |
-| AlternativeTo | alternativeto.net | Any app with alternatives |
-| Slant | slant.co | Comparison-heavy searches |
-| Toolbox for Pages | toolboxforpages.com | Notion tools specifically |
-| Made with Bolt | -- | Bolt-built apps |
-| Built on Lovable | -- | Lovable-built apps |
-| Peerlist | peerlist.io | Builder/developer tools |
-
-**Tier 4 — If relevant to your niche**
-
-Research niche directories for your specific audience:
-- `[industry] tools directory` 
-- `[audience type] resources`
-- Chrome Web Store (if you have a Chrome extension)
-- App marketplaces (Notion, Figma, Linear integrations if applicable)
+Skip directories whose audience doesn't match: a B2B tool on an AI-toy directory earns a worthless backlink and zero users.
 
 ### 3. Submission schedule
 

@@ -1,0 +1,30 @@
+{
+  "skill_name": "domain-name",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me pick a domain for my new product — it's an AI tool that writes changelogs from git commits. I was thinking something like 'changelog ai' but everything feels taken. Budget is normal registration prices, not premium domains.",
+      "expected_output": "A set of 12+ generated name candidates across naming patterns, actual availability checked via the bundled script (not guessed), a shortlist table of available domains with TLD strategy, collision-check notes, and one recommended name with rationale.",
+      "assertions": [
+        "At least 12 name candidates are generated across multiple naming patterns",
+        "Availability is verified by running the check_domains script (evidence: script output or its results table in the response), not asserted from memory",
+        "The output distinguishes available vs taken domains for specific TLDs",
+        "Premium-priced or unknown-status domains are flagged rather than presented as safely buyable",
+        "One specific name is recommended with a rationale paragraph",
+        "Collision checks (trademark, active competitor, social handles) are performed or explicitly listed as next steps for the top candidates"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "is getshipped.com available? also check getshipped.io and .app and .dev while you're at it",
+      "expected_output": "Actual availability status for getshipped.com/.io/.app/.dev obtained by running the bundled checker script, presented clearly, with registration dates for taken domains where available.",
+      "assertions": [
+        "The check_domains script is executed with the requested domains",
+        "A status (available/taken/likely available/unknown) is reported for each of the 4 requested TLDs",
+        "Every availability claim is backed by a live check (script/RDAP/DNS/whois), not asserted from memory",
+        "Domains on TLDs without RDAP coverage (e.g. .io, .ai) are not reported as definitively available — 'likely available' results carry a confirm-at-registrar caveat",
+        "If a domain is taken, the output includes supporting evidence such as registration date"
+      ]
+    }
+  ]
+}

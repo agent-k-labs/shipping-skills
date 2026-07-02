@@ -1,0 +1,28 @@
+{
+  "skill_name": "product-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Set up my product context. I'm in my project repo — it's a Next.js app called Fenceline, a neighbor-dispute documentation tool. The landing page copy and pricing page are in the repo. Ask me whatever you can't figure out yourself.",
+      "expected_output": "The agent inspects repo files first, drafts inferable fields (name, description, pricing, stack) from them, asks one batched set of questions only for unknowable fields (stage, 30-day goal, objections, channels), then writes a filled product-context.md to the project root.",
+      "assertions": [
+        "The agent inspects the repo for landing/pricing copy before asking questions",
+        "Questions are batched rather than asked one at a time",
+        "Questions target only fields not inferable from the repo",
+        "A product-context.md file is written to the project root using the template structure",
+        "The output summarizes what was inferred vs. asked vs. left empty"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "update my product-context.md — we finally launched last week and switched from the waitlist to $29/mo with a 7-day trial.",
+      "expected_output": "The agent reads the existing product-context.md, updates the stage (waitlist → live) and pricing fields, checks whether related fields are now stale (launch goals, channels), and preserves all other content including custom sections.",
+      "assertions": [
+        "The existing file is read before editing",
+        "Stage and pricing fields are updated to the new values",
+        "Other fields and any custom sections are preserved, not regenerated",
+        "The agent flags related fields that may now be stale (e.g. 30-day goal) rather than silently leaving them"
+      ]
+    }
+  ]
+}

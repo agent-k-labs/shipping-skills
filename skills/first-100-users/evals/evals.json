@@ -1,0 +1,28 @@
+{
+  "skill_name": "first-100-users",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I built a habit tracker for ADHD adults with Lovable and launched 2 weeks ago. I have 3 signups and they're all friends. I have about 200 Twitter followers and no email list. How do I get my first 100 users?",
+      "expected_output": "A personalized 30-day plan with week-by-week phases (0→10 via personal outreach, 10→25 via launch events, 25→50 via content/outreach, 50→100 via doubling down), naming specific communities for ADHD adults (e.g. r/ADHD, ADHD Twitter/X), concrete outreach message drafts, and metrics targets.",
+      "assertions": [
+        "The output is structured as a multi-week plan covering the path from current users to 100",
+        "At least 3 specific, named communities or channels relevant to ADHD adults are recommended (not generic 'post on social media')",
+        "The plan includes a ready-to-send outreach message draft personalized to the product",
+        "The first phase prescribes manual/personal outreach rather than paid ads or mass posting",
+        "The plan defines at least 2 measurable targets (e.g. signups per day, activation rate, day-7 retention)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "no one is signing up for my app. it's a chrome extension that summarizes long github issue threads for devs. launched on twitter last week, got 40 likes but 2 installs. what am i doing wrong?",
+      "expected_output": "A diagnosis (likes ≠ distribution; wrong channel or wrong message) plus a developer-channel playbook: Show HN, dev communities, direct outreach to devs who complain about long issue threads, with concrete message drafts and a 30-day plan.",
+      "assertions": [
+        "The output addresses the likes-to-installs gap directly rather than only giving a generic plan",
+        "Developer-specific channels are recommended (e.g. Show HN, GitHub, dev Discords/subreddits), not consumer channels",
+        "At least one tactic involves finding people who already express the pain (e.g. searching for complaints about long issue threads)",
+        "The output includes a concrete next-7-days action list"
+      ]
+    }
+  ]
+}

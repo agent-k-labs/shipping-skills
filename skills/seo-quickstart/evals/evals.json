@@ -1,0 +1,29 @@
+{
+  "skill_name": "seo-quickstart",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My site https://solomax.app isn't showing up in Google searches. It's a Next.js app. What's the minimum SEO I need? Don't give me a 6-month content strategy, I just want the essentials.",
+      "expected_output": "An audit of the current state (via the bundled audit script), a technical SEO checklist with pass/fail, meta tag copy, a 10-keyword map across problem/alternative/category buckets, the first 5 SEO pages to create with H1s and slugs, an llms.txt draft, and Next.js code snippets.",
+      "assertions": [
+        "The audit script is run against the URL or its checks are performed and reported with pass/fail evidence",
+        "Keyword targets are organized into problem/alternative/category buckets",
+        "A prioritized list of roughly 5 first pages is given with URL slugs and H1s",
+        "An llms.txt draft is produced",
+        "Code snippets are Next.js-specific (sitemap.ts, metadata) matching the stated stack",
+        "The output stays scoped to minimum essentials as requested rather than a full content strategy"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "how do i rank on google for 'ai changelog generator'? my product does exactly that but we're on page 6.",
+      "expected_output": "A focused plan for that keyword: on-page optimization of the target page (title, H1, content structure), supporting pages (use-case and comparison pages), internal linking, and realistic expectation-setting about timeline and competition analysis of page 1.",
+      "assertions": [
+        "The plan is specific to the stated keyword, including exact-match placement guidance (title, H1, slug)",
+        "Supporting/cluster pages are recommended with concrete examples",
+        "The output sets realistic timeline expectations rather than promising fast rankings",
+        "Analysis or inspection of current page-1 competitors is included or prescribed"
+      ]
+    }
+  ]
+}

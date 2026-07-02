@@ -1,15 +1,15 @@
 ---
-description: Audit everything before going live — tech, copy, trust, and launch readiness
-argument-hint: "[product URL or project path]"
+name: pre-launch-checklist
+description: Audit a product before going live — core user flows, landing copy, trust signals, SEO basics, analytics, email deliverability, and stability — producing a launch readiness report with blockers ranked by impact. Use when the user asks to "review my app before launch," "do a pre-launch audit," "check if I'm ready to launch," or is about to announce publicly.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Pre-Launch Checklist
 
 The checklist every vibe-coded app should run before announcing to the world. Catches the gotchas that kill first impressions: broken flows, missing trust signals, confusing copy, no analytics, no way to contact you.
-
-## Trigger
-
-User runs `/pre-launch-checklist` or asks to "review my app before launch," "do a pre-launch audit," "check if I'm ready to launch," or similar.
 
 ## Context
 
@@ -17,7 +17,13 @@ Read `product-context.md` if present. If not, ask for the product URL and a one-
 
 ## Process
 
-Work through each section and produce a pass/fail for each item with a one-line fix where it fails.
+If a live URL is available, first run the automated checks — they cover HTTPS, meta/OG tags, favicon, robots.txt, sitemap, and 404 handling in one pass:
+
+```bash
+bash scripts/check_site.sh https://yourdomain.com
+```
+
+Merge its 🔴/🟡 results into the report, then work through the sections below that curl can't verify (flows, emails, copy, payments). Produce a pass/fail for each item with a one-line fix where it fails.
 
 ### 1. Core user flow (5 minutes)
 

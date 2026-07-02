@@ -1,15 +1,15 @@
 ---
-description: Set up analytics for a vibe-coded app — what to measure and how to do it fast
-argument-hint: "[product URL or tech stack]"
+name: analytics-setup
+description: Set up minimum viable analytics for a vibe-coded app — the right tool stack, the 5 events that matter before 100 users, and copy-paste implementation code. Use when the user wants to add analytics, set up tracking, asks "what should I measure," "I don't have any analytics," "how do I track signups, conversions, or revenue," or has analytics installed but nothing useful being tracked.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Analytics Setup
 
 Most vibe-coded apps launch with zero analytics or with analytics installed but nothing useful being tracked. This skill gives you the minimum setup — the 5 events that matter before you have 100 users, the right tool stack, and the implementation plan.
-
-## Trigger
-
-User runs `/analytics-setup` or asks to "add analytics to my app," "set up tracking," "what should I measure," "I don't have any analytics," "how do I track signups / conversions / revenue," or similar.
 
 ## Context
 
@@ -39,7 +39,7 @@ Use PostHog for solo founders. It's free up to 1M events/month, open-source, inc
 
 ### 2. The 5 events that matter before you have 100 users
 
-Don't track everything. Track these 5, measure them weekly:
+Don't track everything. Track these 5, measure them weekly. Deliver the final event list as a filled copy of [assets/tracking-plan-template.md](assets/tracking-plan-template.md) saved into the product repo — it's the single source of truth for event names.
 
 | Event | What it means | How to trigger it |
 |-------|--------------|------------------|

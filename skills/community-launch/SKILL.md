@@ -1,15 +1,15 @@
 ---
-description: Launch your app in Reddit, Discord, Slack, and forums without getting banned
-argument-hint: "[product name/URL and target audience]"
+name: community-launch
+description: Launch an app in Reddit, Discord, Slack, and forums without getting banned — community discovery, per-platform post formulas, and a response protocol. Use when the user wants to launch or share in communities, asks "where should I post my app," "launch on Reddit," "post in Discord," "share in Slack groups," or is worried about self-promotion rules and getting banned.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Community Launch
 
 Communities (Reddit, Discord, Slack, and forums) are where your earliest, most passionate users are — and where most solo founders blow it by posting like a marketer. This skill gives you the specific approach for each community type.
-
-## Trigger
-
-User runs `/community-launch` or asks to "launch in Reddit," "post in Discord," "share in communities," "where should I post my app," "how to launch in Slack groups," or similar.
 
 ## Context
 

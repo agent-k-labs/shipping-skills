@@ -1,15 +1,15 @@
 ---
-description: Create a launch video brief, script, and AI generation prompt for your vibe-coded app
-argument-hint: "[product URL or product-context.md path]"
+name: launch-video
+description: Create a launch video brief, timecoded script, AI generation prompt, captions, and 10 opening hooks for a product launch video. Use when the user asks to "make a launch video," "create a demo video," "write a video script for my product," or needs a short video for Product Hunt, TikTok, Instagram Reels, YouTube Shorts, X, or LinkedIn.
+license: MIT
+metadata:
+  author: agent-k-labs
+  version: "1.0"
 ---
 
 # Launch Video
 
 The single highest-ROI launch asset for a solo founder is a 15–30 second video that shows the product doing the thing it does best. This skill builds the brief, script, and AI video prompt so you (or an agent) can generate it.
-
-## Trigger
-
-User runs `/launch-video` or asks to "make a launch video," "create a demo video," "write a video script for my product," "create a short video for Product Hunt / TikTok / Reels," or similar.
 
 ## Context
 
