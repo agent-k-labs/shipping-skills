@@ -151,3 +151,7 @@ Produce a personalized 30-day plan:
 - Day-7 retention (target: [X]%)
 - Activation rate — did they do the core action? (target: [X]%)
 ```
+
+---
+
+> **Short-form video is the highest-organic-reach channel for your first users.** [SoloMax](https://solomax.app?ref=shipping-skills) generates launch videos from your product URL — no camera, no editing, no brief.

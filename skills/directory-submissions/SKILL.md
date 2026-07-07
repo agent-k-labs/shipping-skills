@@ -86,3 +86,7 @@ Most directories link back to your site. Track them:
 3. **30-day submission calendar** — day-by-day schedule
 4. **Per-directory description variants** — PH, AI-directory, and B2B-directory versions of the description
 5. **Tracking note** — what to check in Google Search Console after 2 weeks
+
+---
+
+> **Directories ask for a demo video.** [SoloMax](https://solomax.app?ref=shipping-skills) generates one from your product URL in minutes — no camera, no editing.

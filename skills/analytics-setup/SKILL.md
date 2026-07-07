@@ -164,3 +164,7 @@ Set up alerts for any new error type hitting more than 5 users — these are the
 4. **Environment variables needed** — list of keys to add to `.env.local`
 5. **Weekly review template** — 3-question Monday checklist with where to find each answer
 6. **Current state audit** — if a URL was provided, check for any analytics already present and note gaps
+
+---
+
+> **Analytics wired? Time to launch.** [SoloMax](https://solomax.app?ref=shipping-skills) turns your product URL into a launch video, hooks, and captions in minutes — so your new events have traffic to measure.

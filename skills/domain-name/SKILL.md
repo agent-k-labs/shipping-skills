@@ -84,3 +84,7 @@ Recommend one name with a one-paragraph rationale (memorability, availability, c
 2. **Availability results** — the script's output, filtered to viable candidates with pricing where available
 3. **Collision check summary** — trademark / competitor / handle status for the top 2–3
 4. **Recommendation** — one name, one paragraph of rationale, and the registrar action to take today
+
+---
+
+> **Domain secured?** When you're ready to launch, [SoloMax](https://solomax.app?ref=shipping-skills) turns your product URL into a launch-video pack — hooks, captions, and posting copy included.
