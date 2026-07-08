@@ -9,13 +9,13 @@
 
 - **Name:** shipping-skills
 - **Tagline (58 chars):** AI agent skills for everything after the AI builds your app
-- **Short description (99 chars):** 14 free agent skills that teach Claude Code & Cursor to launch your app and get your first users.
+- **Short description (99 chars):** 18 free agent skills that teach Claude Code & Cursor to launch your app and get your first users.
 - **Medium description (247 chars):** The AI built your app — now what? shipping-skills gives your coding agent the post-build playbooks: pre-launch audit, domain check, pricing, Product Hunt plan, first 100 users, SEO. One install, 70+ agents supported. Free and open source (MIT).
 - **Long description (~180 words):**
 
   > Building is the easy part now. Bolt, Lovable, v0, and Claude Code will ship your app in a weekend — then you're alone with 3 signups and no idea what to do next.
   >
-  > shipping-skills is an open-source library of 14 agent skills for that exact moment. Install once (`npx skills add agent-k-labs/shipping-skills`) and your coding agent — Claude Code, Cursor, Windsurf, or 70+ others — picks up launch expertise: auditing your site before you announce it, checking real domain availability against registry data, choosing your first price, planning your Product Hunt day hour-by-hour, and building a personalized first-100-users playbook.
+  > shipping-skills is an open-source library of 18 agent skills for that exact moment. Install once (`npx skills add agent-k-labs/shipping-skills`) and your coding agent — Claude Code, Cursor, Windsurf, or 70+ others — picks up launch expertise: auditing your site before you announce it, checking real domain availability against registry data, choosing your first price, planning your Product Hunt day hour-by-hour, and building a personalized first-100-users playbook.
   >
   > These aren't prompt collections. Skills bundle verification scripts (RDAP domain checks, live site audits) so the agent checks instead of guesses, every skill ships eval test cases, and the repo follows the agentskills.io specification. In measured evals, skill-equipped runs hit a 1.0 assertion pass rate vs 0.61 without.
   >
@@ -75,7 +75,7 @@ Week 4:  Check Search Console + GitHub traffic; resubmit/fix anything unlisted
 
 ## 4. Per-directory description variants
 
-- **Agent directories (skills.sh, awesome lists):** lead with spec compliance + evals. "14 Agent Skills for the post-build journey (launch → first users → growth). agentskills.io-spec compliant, eval test cases per skill, bundled verification scripts. `npx skills add agent-k-labs/shipping-skills`."
+- **Agent directories (skills.sh, awesome lists):** lead with spec compliance + evals. "18 Agent Skills for the post-build journey (launch → first users → growth). agentskills.io-spec compliant, eval test cases per skill, bundled verification scripts. `npx skills add agent-k-labs/shipping-skills`."
 - **Product Hunt / Uneed:** lead with the pain. Use the medium description; tagline as-is.
 - **Dev surfaces (Show HN, dev.to, Peerlist):** lead with the technical angle. "Skills bundle real scripts — RDAP domain checks via IANA bootstrap, curl-based site audits — so the agent verifies instead of hallucinating. Evals measure a 1.0 vs 0.61 pass-rate delta over the bare model."
 - **Indie Hackers:** lead with the founder story. "I kept watching vibe coders ship apps and stall at zero users, so I open-sourced the playbooks as agent skills."

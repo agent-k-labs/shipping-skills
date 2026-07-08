@@ -16,7 +16,7 @@
 
 **Key differentiator:** Not build-step skills — these pick up where the builders leave off. Skills check instead of guess (bundled scripts hit RDAP, your live site's meta tags, robots.txt), every skill ships eval test cases, and the whole repo follows the agentskills.io spec so it installs into 70+ agents.
 
-**Current stage:** live (v1.0.0 pushed, 14 skills)
+**Current stage:** live (v1.0.0 pushed, 18 skills)
 
 **Pricing model:** Free, MIT-licensed. (DFY sibling: SoloMax for launch videos.)
 
