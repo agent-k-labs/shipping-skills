@@ -57,9 +57,9 @@ Stage 0 — Foundation     Stage 1 — Launch         Stage 2 — Get Users     
 ────────────────────     ─────────────────        ───────────────────        ────────────────
 product-context          domain-name              first-100-users            onboarding-activation
                          pre-launch-checklist     community-launch           analytics-setup
-                         landing-page             directory-submissions      referrals (coming)
-                         waitlist                 seo-quickstart             churn-basics (coming)
-                         pricing-first-time       founder-outreach (coming)
+                         landing-page             directory-submissions      referrals
+                         waitlist                 seo-quickstart             churn-basics
+                         pricing-first-time       founder-outreach           changelog
                          launch-video ─► SoloMax
                          product-hunt-launch
 ```
@@ -84,6 +84,10 @@ Start with `product-context` — it writes the `product-context.md` file every o
 | [`seo-quickstart`](skills/seo-quickstart/) | Get Users | Minimum viable SEO (includes an automated page audit script) |
 | [`onboarding-activation`](skills/onboarding-activation/) | Grow | Get new users to their first "aha" moment |
 | [`analytics-setup`](skills/analytics-setup/) | Grow | The 5 events that matter before 100 users, with setup code |
+| [`founder-outreach`](skills/founder-outreach/) | Get Users | Direct founder-to-user outreach — target list, DMs people answer, 2-week sprint |
+| [`changelog`](skills/changelog/) | Grow | A public what's-new page and a 15-minute weekly publishing habit |
+| [`churn-basics`](skills/churn-basics/) | Grow | Measure real churn, find the drop-off cliff, ship the right retention fix |
+| [`referrals`](skills/referrals/) | Grow | A referral loop sized for a small product — incentive, ask, and ?ref= tracking |
 
 Every skill follows the [Agent Skills specification](https://agentskills.io/specification): trigger-rich descriptions, bundled `scripts/`, `references/`, and `assets/` where they add leverage, and `evals/evals.json` test cases.
 
