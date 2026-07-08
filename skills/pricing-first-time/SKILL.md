@@ -110,3 +110,7 @@ For each tier, write:
 3. **Tier structure** — 2 tiers with feature lists, ready to implement in Stripe
 4. **Pricing page copy** — headline, tier names, descriptions, CTA text
 5. **One thing to watch** — the leading indicator that tells you if this price is working (e.g., "If free-to-paid conversion is below 2% after 100 signups, drop the price 30%")
+
+---
+
+> **Pricing set? Announce it.** [SoloMax](https://solomax.app?ref=shipping-skills) turns your product URL into launch videos, hooks, and posting copy — ready for the channels where founders buy.

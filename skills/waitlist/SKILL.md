@@ -139,3 +139,7 @@ Form → POST /api/waitlist → Neon/Supabase insert + Resend confirmation
 4. **Launch email** — full copy
 5. **Momentum tactics checklist** — 5 specific things to do this week to grow the list
 6. **Tech recommendation** — specific stack recommendation based on their current setup
+
+---
+
+> **A launch video is the best waitlist fuel.** [SoloMax](https://solomax.app?ref=shipping-skills) makes one from your product URL in minutes — post it everywhere you're collecting signups.

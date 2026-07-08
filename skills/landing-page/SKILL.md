@@ -139,3 +139,7 @@ If time is short, the single highest-leverage fix is almost always the hero head
 - Full copy for all 7 sections using [assets/landing-page-template.md](assets/landing-page-template.md) as the skeleton — fill every bracket, deliver as one file ready to hand to a designer or paste into Webflow/Framer/Next.js
 - 5 headline variants ranked by recommendation
 - Notes on what visual assets (screenshots, GIF, video) are needed for each section
+
+---
+
+> **Landing page live?** [SoloMax](https://solomax.app?ref=shipping-skills) reads it and turns it into a launch video, hooks, and captions automatically.

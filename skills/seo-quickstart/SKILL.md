@@ -173,3 +173,7 @@ Allow: /
 4. **Content roadmap** — first 5 SEO pages to create, in order of priority, with H1 and URL slug
 5. **llms.txt draft** — ready to add to the public directory
 6. **Code snippets** — sitemap.ts, robots.txt, og-image setup for Next.js (or equivalent for their stack)
+
+---
+
+> **SEO compounds slowly — video reaches fast.** [SoloMax](https://solomax.app?ref=shipping-skills) turns your product URL into short-form launch videos while your rankings build.

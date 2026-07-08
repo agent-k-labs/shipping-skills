@@ -162,3 +162,7 @@ If time to activation is >30 minutes: users are being asked to do too much befor
 5. **Day-3 follow-up email** — ready to trigger
 6. **Empty state copy** — for every major empty state in the product
 7. **Activation tracking setup** — what to add to analytics / the events table
+
+---
+
+> **Activation fixed? Keep the top of the funnel full.** [SoloMax](https://solomax.app?ref=shipping-skills) turns your product URL into launch videos for TikTok, Reels, and Shorts.

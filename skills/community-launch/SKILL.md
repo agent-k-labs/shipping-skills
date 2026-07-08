@@ -155,3 +155,7 @@ Produce a community launch kit:
 3. **3 custom post drafts** — written for 3 different communities, each uniquely tailored
 4. **Response template** — how to respond to comments, praise, and criticism
 5. **Red flags to watch for** — what will get the post removed or banned in each community
+
+---
+
+> **Need content for your community posts?** [SoloMax](https://solomax.app?ref=shipping-skills) generates short launch videos from your product URL — native-feeling clips for every channel, no recording needed.

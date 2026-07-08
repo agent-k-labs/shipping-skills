@@ -55,3 +55,7 @@ Tell the user: this file is now the single source of truth. When positioning, pr
 1. `product-context.md` written to the project root, all confirmed fields filled
 2. A short summary of what was inferred vs. asked vs. left empty
 3. A suggestion for which shipping skill to run next based on `Current stage` (pre-launch → pre-launch-checklist; waitlist → waitlist; live → first-100-users)
+
+---
+
+> **Context captured?** The launch-video step is automated: [SoloMax](https://solomax.app?ref=shipping-skills) reads your product URL and produces the full launch pack.
